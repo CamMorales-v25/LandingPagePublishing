@@ -1,0 +1,124 @@
+body {
+    background-color:#E1D29A ; 
+}
+
+.menu{
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Convierte la lista en un contenedor flexbox */
+    justify-content: space-around; /* Distribuye los elementos de la lista*/
+    background-color: #004229 ; /* Color de fondo del índice */
+    padding: 10px;
+    margin: 0;
+    font-family:"Roboto";
+}
+.menu a {
+    text-decoration: none;
+}
+
+.menu li:nth-child(n) a {
+    color: #E1D29A ;
+}
+
+
+#logo-donfy {
+    position: fixed;
+    right: 0;
+    top: 52.70%;
+    transform: translateY(-50%);
+    width: 728px;
+    z-index: -1; /* Coloca la imagen detrás del texto */
+}
+
+.texto {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding-left: 70px; /* Añade espacio a la izquierda del texto */
+    text-align: justify;
+    width: 40%;
+}
+
+h1 {
+    color:  #004229 ;
+    text-align: left;
+    font-family: "Lato";
+    font-size: 65px
+}
+
+p {
+    color:  #004229 ;
+    font-family: "Open Sans";
+    font-size: 17px
+}
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #f5f4f4;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 60px;
+}
+.btn-neon:hover{
+    background: #004229;
+    box-shadow: 0 0 10px #004229, 0 0 40px #004229, 0 0 80px #004229;
+    transition-delay: 0.5s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#004229);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 0.5s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#004229);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 0.5s; 
+    transition-delay: 0.25s; /
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#004229);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 0.5s; 
+    transition-delay: 0.2s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#004229);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.45s;
+}
+
