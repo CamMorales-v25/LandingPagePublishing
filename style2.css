@@ -60,7 +60,7 @@ input{
     border: 0;
     outline: none;
     padding: 18px 15px;
-    color:#f5f4f4;
+    color:#004229;
 }
 
 input::placeholder{
@@ -106,7 +106,7 @@ form p a {
 }
 
 .btn-field button.disable{
-    background-color: #eaeaea;
+    background-color: rgb(51, 128, 0);
     color: #2c2f35;
 }
 
